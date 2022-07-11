@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags are used to describe the webpage's context -->
+    <meta name="description" content="This website is a portfolio of IT technophile Ashwin Shrestha">
+    <meta name="keyword" content="CV,Portfolio,IT">
+    <meta name="author" content="Ashwin Shrestha"> 
+    <!-- The title is written which is displayed at the top of the tab on a webpage -->
+    <title>Ashwin Shrestha</title>
+    <!-- External CSS file is linked -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Internal CSS tag is created by style tag -->
+    <style>
+      .container {
+        height: 450px;      /*This class creates a division in the webpage so that the content are distinct from others */
+        display: flex;
+        margin: 30px;
+        border: solid;
+      }
+      .img {
+        width: 100%;      /*This class changes the width and height of the image*/
+        height: 100%;
+      }
+      .half1 {
+        flex: 40%;      /*This class changes the particular size the content of the class can use when the display is divided into two*/
+      }
+      .half2 {
+        flex: 60%;
+      }
+      .card {
+        background: rgba(22, 22, 22, 0.918);        /*This class stylizes the content in half1 and half2 class*/
+        padding: 30px;
+        margin: 1px;
+        border: solid;
+      }
+    </style>
+  </head>
+  <body>
+   <nav>        <!-- nav tag denotes the navigation part of the webpage -->
+     <a class="logo" href="Home.html">Ashwin Shrestha</a>      <!--  Opens the home page when the logo is clicked*/ -->
+      <!-- unordered list is created -->
+      <ul>
+        <!-- anchor tags are kept inside the unordered list which when clicked opens their respective webpages -->
+        <li><a href="Home.html">Home</a></li>     
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="Interests.html">Interests</a></li>
+      </ul>
+    </nav>
+    <!-- Container class is made -->
+    <div class="container">
+      <!-- half1 class is the first half of the container class, they are displayed in the same space -->
+      <div class="half1 card">
+        <img class="img" src="images/aboutme.jpg" alt="Error loading image" />
+      </div>
+      <!-- half2 is the second half of the container class  -->
+      <div class="half2 card">
+        <!-- Inline CSS is called using style tag which is used to change the font weight, alignment of the text and color of the text -->
+        <h1 style="font-weight: bold; text-align: center; color: beige">
+          About Me
+        </h1>
+        <!-- Inline CSS is used to customize the color of the text and font size  -->
+        <p style="color: ghostwhite; font-size: larger">
+          I am a young technophile from Nepal who loves everything about
+          computers. I am currently studying BSc. Hons in Computing at Islington
+          college located in Kamalpokhari,Kathmandu. Having a computer as a
+          friend from my childhood,I am very fascinated about internal as well
+          as the external parts of the computer. I am interested in Programming,
+          Building a website, Video editing and making and almost everything
+          that requires a computer.If you feel like you need a guy like me, you
+          can check my CV at the CV page and contact me by filling the form or
+          sending me an email.
+        </p>
+      </div>
+    </div>
+<!-- Footer tag keeps the footer part of the website  -->
+   <footer>
+    <h2>Contact Me for IT related work @ ashwin.guitar@gmail.com</h2>
+  </div>
+   </footer>
+      
+  </body>
+</html>

@@ -1,0 +1,75 @@
+body{
+    font-family: cursive;                       /*it stylizes the body of the website*/
+    background: rgba(255, 217, 0, 0.171);
+}
+/* navigation part */
+nav{
+   
+    background:black;                           /*It stylizes the nav class*/
+    height: 80px;
+    padding: 0px;
+}
+
+nav ul li a{                                    /*It stylizes the anchor tags inside the unordered lists*/
+    text-decoration: none;
+    color: white;
+
+}
+
+
+nav ul li{                                  
+    
+    list-style: none;                           /*The unordered list symbol is removed and the list is made in a same line*/
+    display: inline;
+    font-size: 25px;
+    padding: 30px;
+
+}
+nav ul{
+    float: right;                               /*The inline list is kept in the right side*/
+
+}
+
+a.logo{
+    text-decoration: none;                      /*It stylizes the logo that is "ASHWIN SHRESTHA" */
+    font-size: 40px;
+    line-height: 80px;
+    padding: 50px;
+    color: white;
+}
+
+nav ul li :hover{                               /*The color of the navigation bar changes when u hover the mouse*/
+    color:rgba(218, 165, 32, 0.856);
+}
+
+/* navigation part end */
+
+.slider-container{                                  /*This stylizes the part containing the image slider*/
+	width: 100%;
+    height: 700px;
+	background-color:transparent;
+	text-align:center;
+}
+.linke {
+    color: lightsteelblue;
+    text-decoration: none;
+
+  }
+
+  .linke:hover {
+    color: goldenrod;
+  }
+  .writing{
+    font-size: larger;
+  }
+/* footer part */
+
+footer{ 
+     width: 99%;                                    /*This class stylizes the end part of the website*/
+    padding: 15px;
+    height: 80px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

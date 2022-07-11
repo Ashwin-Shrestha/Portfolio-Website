@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta tags are used to describe the webpage's context -->
+  <meta name="description" content="Research on how to make a websites" />
+  <meta name="keyword" content="website,CSS,JS,HTML" />
+  <meta name="author" content="Ashwin Shrestha" />
+  <!-- The title is written which is displayed at the top of the tab on a webpage -->
+  <title>Research</title>
+  <!-- External CSS file is linked -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Internal CSS tag is created by style tag -->
+  <style>
+    .container {
+      background-color: rgba(22, 22, 22, 0.918);
+      /*This class creates a division in the webpage so that the content are distinct from others */
+      height: 1600px;
+      margin-left: 50px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      width: 90%;
+      padding: 30px;
+      border-radius: 30px;
+      color: ghostwhite;
+      display: block;
+    }
+
+    .container2 {
+      background-color: rgba(22, 22, 22, 0.918);
+      /*This class creates a division in the webpage so that the content are distinct from others */
+      height: 2000px;
+      margin-left: 50px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      width: 90%;
+      padding: 30px;
+      border-radius: 30px;
+      color: ghostwhite;
+    }
+
+    .hide1 {
+      /* The display block attribute displays the content of the class */
+      display: block;
+    }
+
+    .hide2 {
+      /* The display none hides the content of the class */
+      display: none;
+    }
+
+    .img1 {
+      /*This attribute divides the class into 2 parts */
+      display: flex;
+    }
+
+    .heading {
+      /* Stylizes the heading of the Research */
+      text-align: center;
+      font-weight: bold;
+      font-size: larger;
+      color: beige;
+      padding: 25px;
+    }
+
+    .btn {
+      /* Stylizes the button */
+      text-align: center;
+      padding: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- The navigation part of the webpage  -->
+  <nav>
+    <a class="logo" href="Home.html">Ashwin Shrestha</a>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="Research.html">Research</a></li>
+      <li><a href="Interests.html">Interests</a></li>
+    </ul>
+  </nav>
+  <!-- Btn class is made to stylize the button tag -->
+  <div class="btn">
+    <!-- Inline CSS is used to stylize the button itself -->
+    <button onclick="page()">Click this button to change the Page</button>
+  </div>
+  <!-- The container class is called with hide1 which displays the content of this class  -->
+  <div class="container hide1" id="page1">
+    <!-- heading class is made  -->
+    <div class="heading">
+      <H1>A Research on How I made the website</H1>
+    </div>
+    <p class="writing">
+      While making the website, I have mainly reviewed or researched two websites,
+      <!-- Anchor tag is used to provide the link  -->
+      <a href="https://www.garyvaynerchuk.com" class="linke">Gary Vaynerchuk</a>'s personal website
+      and <a href="https://hankgreen.com/" class="linke">Hank Green</a>’s personal website(Mainly, Gary V’s website
+      because I like the black and white design). So, I have
+      reviewed the webpages from these websites and written about it down below:
+    </p>
+    <div class="img1">
+      <!-- Inline CSS is used to stylize the image  -->
+      <img style="height: 350px; width: 600px; margin: 50px" src="images/navbar.jpg" alt="Error">
+      <img style="height: 350px; width: 600px; margin: 50px" src="images/navcheck.jpg" alt="Error">
+    </div>
+    <h2>The Navigation bar</h2>
+    <div class="writing">
+      <p>
+        From what I have learned after looking at the websites, navigation bar is one of the most if not the most
+        important part of a website. It helps a user to get around the website easily. So, firstly as said above, I
+        really liked the design of black and white colour and having a hover element when the mouse is hovered near the
+        nav bar. So, I basically created somewhat the same navigation bar with the logo at the left but my website has
+        the nav bar on right instead of on the left as seen in his nav bar. The logo in my website when click takes a
+        user to the home page as in his navigation bar or in some other websites.
+      </p>
+    </div>
+    <div class="img1">
+      <!-- Inline CSS is used to stylize the image  -->
+      <img style="height: 350px; width: 600px; margin: 50px" src="images/about page.jpg" alt="Error">
+      <img style="height: 350px; width: 600px; margin: 50px" src="images/navcheck.jpg" alt="Error">
+    </div>
+    <h2>The Portfolio/About Me</h2>
+    <div class="writing">
+     
+
+      <p>
+        The portfolio part of hank green was one that caught my eyes while looking for websites. He had a photo on the
+        left with a short and descriptive biography about what he does and who he is. So, I took an inspiration from his
+        webpage and used it in mine with my photo and a short description about me.
+      </p>
+    </div>
+  </div>
+  <!-- This class is hidden at first as the display attribute is kept to none -->
+  <!-- Page2  -->
+  <div class="container2 hide2" id="page2">
+    <div class="heading">
+       <!-- heading class is made  -->
+      <H1>A Research on How I made the website (Contd)</H1>
+    </div>
+    <h2>Contact Me/CV</h2>
+    <div class="writing">
+      <p>
+        The CV part was mainly my own idea and I didn’t really use any webpage to make it. I just imagined about what a
+        CV consists of and wrote it in a table and created it. However for the Contact me part, I used a website of a
+        guy named <!-- Anchor tag is used to provide the link  --><a href="
+        https://manparvesh.com/" class="linke">Man Parvesh Singh Randhawa</a>. Man Parvesh Singh Randhawa. Although his
+        contact me form was a bit bigger than mine I created a
+        relatively smaller contact me form but added a selection button which writes the objective of contacting me.
+      </p>
+    </div>
+
+    <div class="img1">
+      <!-- Inline CSS is used to stylize the image  -->
+      <img style="height: 350px; width: 600px; margin: 50px" src="images/contactme.jpg" alt="Error" />
+      <img style="height: 350px; width: 600px; margin: 50px" src="images/mycontactme.jpg" alt="Error" />
+    </div>
+    <h2>The Blog</h2>
+    <div class="writing">
+      <p>
+      <!-- a paragraph is written    -->
+        The blog page was also inspired by Gary V’s blog page about Twitter. Here he writes the blog on the left side
+        and has his advertisement on the right side as images. However, what I did was add the images related to the
+        blog to the right side instead of in the blog itself.
+      </p>
+    </div>
+    <div class="img1">
+      <!-- Inline CSS is used to stylize the image  -->
+      <img style="height: 350px; width: 600px; margin: 50px" src="images/blog.jpg" alt="Error" />
+      <img style="height: 350px; width: 600px; margin: 50px" src="images/myblog.jpg" alt="Error" />
+    </div>
+    <h2>The Footer</h2>
+    <div class="writing">
+      <p>
+         <!-- a paragraph is written    -->
+        The footer I have made is a very simple one but i really wanted to make it like Hank Green's footer and many
+        other people's footer with their social links in icons. However, I did not know how to make it and when i looked
+        it up on youtube to learn about it, I still did not get how to make them. So,instead I made them as it is now
+        with just my contact email-ID.
+      </p>
+    </div>
+    <div class="img1">
+        <!-- Inline CSS is used to stylize the image  -->
+      <img style="height: 350px; width: 600px; margin: 50px" src="images/footer.jpg" alt="Error" />
+      <img style="height: 350px; width: 600px; margin: 50px" src="images/myfooter.jpg" alt="Error" />
+    </div>
+  </div>
+
+  </div>
+  <div class="btn">
+    <!-- The change() is called from the external JavaScript file  -->
+    <button onclick="page()">Click this button to change the Page</button>
+  </div>
+  <!-- Footer tag keeps the footer part of the website  -->
+  <footer>
+    <h2>Contact Me for IT related work @ ashwin.guitar@gmail.com</h2>
+    </div>
+  </footer>
+  <!-- The external JavaScript file is linked -->
+  <script src="java.js"></script>
+</body>
+
+</html>

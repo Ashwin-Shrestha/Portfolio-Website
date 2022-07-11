@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- meta tags are used to describe the webpage's context -->
+  <meta name="description" content="MY INTERESTS" >
+  <meta name="keyword" content="TRAVEL,GAME,FOOTBALL">
+  <meta name="author" content="Ashwin Shrestha" >
+   <!-- The title is written which is displayed at the top of the tab on a webpage -->
+  <title>Interests</title>
+  <!-- External CSS file is linked -->
+  <link rel="stylesheet" href="style.css" >
+  <!-- Internal CSS tag is created by style tag -->
+  <style>
+    /*This class creates a division in the webpage so that the content are distinct from others */
+    .container {
+      background-color: rgba(22, 22, 22, 0.918);
+      height: 1700px;
+      margin: 50px;
+      width: 90%;
+      padding: 30px;
+      border-radius: 30px;
+      color: ghostwhite;
+      display: block;
+    }
+/* This class stylizes the paragraph */
+    .para {
+      font-size: 20px;
+      color: ghostwhite;
+    }
+/* This class stylizes the topics */
+    .topic {
+      font-size: 40px;
+      list-style-type: none;
+      color: beige;
+    }
+/* This class stylizes the image slider */
+    .slider {
+      width: 100%;
+      height: 600px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+   <!-- The navigation part of the webpage  -->
+  <nav>
+    <a class="logo" href="Home.html">Ashwin Shrestha</a>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="Research.html">Research</a></li>
+      <li><a href="Interests.html">Interests</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="head1">
+      <!-- Heading with inline css is made  -->
+      <h1 style="text-align: center; font-size: 50px; color: beige">
+        MY INTERESTS
+      </h1>
+      <div class="writing">
+        <!-- paragraph is written  -->
+        <p class="para">
+          For the start, I would like to say, I am a very introvert type of person who really has interest in things
+          that are not so cool to the outer world. I have a curiosity to learn many things but not have interest in
+          those things. So, I would say my interests are limited. I have wrote down some of my interests which I could
+          think of down below, hope you take a look at it if you want to know more about me.
+        </p>
+        <ul>
+          <li class="topic">
+            Travelling
+            <br>
+            <p class="para">
+              Travelling for me is the best thing that the world can offer. Travelling has helped me a lot in refreshing
+              myself from all the burdens I have faced till now. Once a while, when I am stressed, I go on a journey to
+              somewhere with friends or parents or even alone sometimes. My main goal in life is to earn money so that I
+              can travel every place in the world. So, you can just say that I am living my life right now mainly to
+              travel a lot and go to different places. Travelling helps me know how little the problems in our life is
+              compared to the world and helps me think on how I can solve a problem. So, the first thing that I would
+              like to do is to travel and I consider this as my interest not just hobby. Below, I have kept some photos
+              I have clicked of the beautiful places I have travelled till now as a slide. Do give it a watch if you got
+              time
+            </p>
+            <!-- image slider is created  -->
+            <div class="slider-container">
+              <img class="slider" src="images/jiri.JPG" alt="Error Loading images">
+              <img class="slider" src="images/kalinchowk.JPG" alt="Error Loading Images">
+              <img class="slider" src="images/stars.JPG" alt="Error Loading images">
+              <img class="slider" src="images/squad.jpg" alt="Error Loading Images">
+              <img class="slider" src="images/poonhill.jpg" alt="Error Loading Images">
+              <img class="slider" src="images/rara.JPG" alt="Error Loading Images">
+              <br>
+              <!-- change() function is called from the External JS  -->
+              <button onclick="change(-1)">&lt;</button>
+              <button onclick="change(1)">&gt;</button>
+            </div>
+          </li>
+          <li class="topic">Programming
+            <br>
+            <!-- another paragraph is written  -->
+            <p class="para">
+              As having a computer as a friend from childhood, I have grown to love computers a lot. So, everything
+              about computer fascinates me. So , programming is one of the main things of computer that fascinates me.
+              With programming, you can do anything in a computer. You can build a game, you can build an application
+              for something. For me, programming is something that can create or bring something wonderful to the world.
+              For example, If we didn’t had a web browser, I don’t think we would be able to surf the internet like we
+              are doing now. So, programming fascinates me a lot and I often code when I am free or have no work. It’s
+              an interest I would like to make a job.
+            </p>
+          </li>
+          <li class="topic">Gaming
+            <br>
+            <p class="para">
+              As said above, I love computers so if a person loves computers, they must love games. So, I am pretty
+              interested in playing games as well. Although, I have played games for my whole life. I am more interested
+              in competitive shooting games like CS:GO, Valorant, Apex Legends and many others. When I play these games,
+              I concentrate on it like how Tom Cruise is concentrated in Mission Impossible when he enters the vault. If
+              you haven’t seen that movie, I recommend you see it. So, I really love playing games and I really love how
+              the dynamic of a game works. So, basically I am a tech-nerd who loves to travel a lot.
+            </p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Footer tag keeps the footer part of the website  -->
+  <footer>
+    <h2>Contact Me for IT related work @ ashwin.guitar@gmail.com</h2>
+    </div>
+  </footer>
+  <!-- The external JavaScript file is linked -->
+  <script src="java.js"></script>
+</body>
+
+</html>

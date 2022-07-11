@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta tags are used to describe the webpage's context -->
+  <meta name="description" content="This is Ashwin Shrestha's CV" />
+  <meta name="keyword" content="CV,Portfolio,IT" />
+  <meta name="author" content="Ashwin Shrestha" />
+  <!-- The title is written which is displayed at the top of the tab on a webpage -->
+  <title>CV</title>
+  <!-- External CSS file is linked -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Internal CSS tag is created by style tag -->
+  <style>
+    .container {
+      margin: 15px;
+      /*This class creates a division in the webpage so that the content are distinct from others */
+      height: 900px;
+      background-color: rgba(22, 22, 22, 0.918);
+      color: ghostwhite;
+      border-radius: 30px;
+      padding: 50px;
+    }
+
+    .info {
+      font-weight: bold;
+      /*The info class stylizes the info class*/
+      text-align: center;
+      padding: 15px;
+    }
+
+    .data {
+      text-align: center;
+      /*The data class stylizes the data class*/
+      padding: 15px;
+    }
+
+    .container2 {
+      margin: 15px;
+      height: 350px;
+      background: rgba(22, 22, 22, 0.918);
+      /*The container2 class creates another division in the webpage*/
+      color: rgb(214, 210, 210);
+      padding: 100px;
+      display: flex;
+      border-radius: 30px;
+    }
+
+    .half1 {
+      flex: 40%;
+      /*The half1 and half 2 class contains flex which divides the part of a webpage into two parts to the given size*/
+    }
+
+    .half2 {
+      flex: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- The navigation part of the webpage  -->
+  <nav>
+    <a class="logo" href="Home.html">Ashwin Shrestha</a>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="Research.html">Research</a></li>
+      <li><a href="Interests.html">Interests</a></li>
+    </ul>
+  </nav>
+  <!-- Container class is made  -->
+  <div class="container">
+    <!-- inline css is called to stylize the heading  -->
+    <h1 style="text-align: center; color:beige;font-size: 40px;">My CV:</h1>
+    <!-- A pragraph is written  -->
+    <p>
+      This is My CV. Currently, I am studying BSc. Hons in Computing in
+      Islingoton College, Kathmandu. Although, I have not done any real
+      computing related project. Instead I have done some projects in
+      video editing and animation video making as written in the CV below.
+    </p>
+    <!-- Table class is made to customise the part inside the class  -->
+    <div class="table">
+      <!-- table with border size 5 is created and is aligned to center to write the CV -->
+      <table border="5" align="center">
+        <!-- Values are added inside the table  -->
+        <!-- the left side of the table are kept in info class and the other in data class  -->
+        <tr>
+          <td class="info">Name</td>
+          <td class="data">Ashwin Shrestha</td>
+        </tr>
+        <tr>
+          <td class="info">Personal Information</td>
+          <td class="data">
+            Born in January 4 2000 in Maitidevi,Kathmandu,Nepal
+          </td>
+        </tr>
+        <tr>
+          <td class="info" rowspan="3">Education</td>
+          <td class="data">
+            Studied Secondary level in Graded English Medium School(GEMS)
+          </td>
+        </tr>
+
+        <tr>
+          <td class="data">Studied +2 In Trinity International College</td>
+        </tr>
+        <tr>
+          <td class="data">Currently Studying in Islington College</td>
+        </tr>
+        <tr>
+          <td class="info" rowspan="4">My Skills</td>
+          <td class="data">Intermediate level in C and C++</td>
+        </tr>
+        <tr>
+          <td class="data">Intermediate level in Java Programming</td>
+        </tr>
+        <tr>
+          <td class="data">Intermediate level in MYSQL</td>
+        </tr>
+        <tr>
+          <td class="data">
+            Intermediate level in Adobe Softwares(Photoshop,
+            Illustrator,Premier Pro,AfterEffects,Character Animation)
+          </td>
+        </tr>
+        <tr>
+          <td class="info" rowspan="3">My Projects</td>
+          <td class="data">
+            Ad video made in Adobe Softwares for Online Store
+            <!-- links are provided for the work done  --> <a
+              href="https://www.facebook.com/103797071745429/videos/260180515781640/" class="linke">Gaida-Shop</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="data">
+
+            Music video made in Adobe Softwares for
+             <!-- links are provided for the work done  --><a href="https://www.youtube.com/watch?v=_mMqnz_Vegs"
+              class="linke">Kathmandu</a> By Sworaj
+            Sapkota(for Legends Productions)
+          </td>
+        </tr>
+        <tr>
+          <td class="data">
+            Hospital Database software made as Coursework
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- Another container class to create a different section -->
+  <div class="container2">
+    <!-- The sector is divided into two parts using half1 and half2 class  -->
+    <div class="half1 card">
+      <h1 style="font-size: 50px;text-align: center;;">Connect</h1>
+      <h2 style="font-size: 30px;text-align: center;">with me by filling the form</h2>
+    </div>
+    <div class="half2 card">
+      <div class="form">
+        <h3 style="margin-top: 10px;font-size: 20px;">
+          You Can Leave A Message and I will get in touch with You (Please fill all the boxes)
+        </h3>
+        <!-- A form is created to retrieve the details -->
+        <!-- When the form is submitted the validate() fucntion is triggered which takes the webpage to the script tag to validate the form -->
+        <form onsubmit="validate()" name="validity" style="font-weight: bold;">
+          <table>
+            <tr>
+              <td>First Name*</td>
+              <td><input type="text" name="first_name" placeholder="First Name"></td>
+            </tr>
+            <tr>
+              <td>Last Name*</td>
+              <td><input type="text" name="last_name" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+              <td>E-mail*</td>
+              <td><input type="email" name="email_id" id="mail" placeholder="E-Mail"></td>
+            </tr>
+            <tr>
+              <td>You Contacted Me for?</td>
+              <td><select name="FOR">
+                  <option value="Programming">For Programming Projects</option>
+                  <option value="Database">For Datebase Projects</option>
+                  <option value="Video">For Video Editing Projects</option>
+                  <option value="Animation">Create Animation Videos</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td>Message*</td>
+              <td>
+                <textarea name="message" id="msg" cols="30" rows="10" placeholder="Type your message"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="submit" value="Contact Me" /></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Footer tag keeps the footer part of the website  -->
+  <footer>
+    <h2>Contact Me for IT related work @ ashwin.guitar@gmail.com</h2>
+    </div>
+  </footer>
+  <!-- Internal JavaScript is made using script tag  -->
+  <script>
+    // This function checks whether the form is filled correctly or not 
+    function validate() {
+      var fname = document.forms["validity"]["first_name"].value;
+      var lname = document.forms["validity"]["last_name"].value;
+      var email = document.forms["validity"]["email_id"].values;
+      var message = document.forms["validity"]["message"].value;
+      // If the form has any empty value it asks the user to fill the form correctly else gives the message that form has been submitted
+      if (fname == "" || lname == "" || email == "" || message == "") {
+        alert("Please fill out all the details")
+      }
+      else {
+        alert("Form has been submitted.You will be contacted soon")
+      }
+    }
+  </script>
+</body>
+
+</html>
